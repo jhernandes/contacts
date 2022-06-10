@@ -1,0 +1,16 @@
+{
+    "name": "jhernandes/contacts",
+    "autoload": {
+        "psr-4": {
+            "Jhernandes\\Contacts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Contacts of a person or company"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

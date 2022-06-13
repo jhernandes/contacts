@@ -46,9 +46,9 @@ class PhoneTest extends TestCase
 
     public function testCanBeUsedAsString(): void
     {
-        $this->assertEquals(
-            '11990901010',
-            Phone::fromString('11990901010')
+        $this->assertSame(
+            '(11) 99090-1010',
+            (string) Phone::fromString('11990901010')
         );
     }
 
@@ -56,15 +56,15 @@ class PhoneTest extends TestCase
     {
         $this->assertEquals(
             '(11) 3090-1010',
-            Phone::fromString('1130901010')->formatted()
+            (string) Phone::fromString('1130901010')
         );
     }
 
     public function testCanBeFormattedWith11Numbers(): void
     {
-        $this->assertEquals(
+        $this->assertSame(
             '(11) 99090-1010',
-            Phone::fromString('11990901010')->formatted()
+            (string) Phone::fromString('11990901010')
         );
     }
 }

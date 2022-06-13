@@ -36,7 +36,7 @@ class Phone
 
     public function __toString(): string
     {
-        return $this->phone;
+        return $this->formatted();
     }
 
     public function formatted(): string
